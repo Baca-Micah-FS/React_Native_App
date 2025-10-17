@@ -25,6 +25,12 @@ export default function HomeScreen() {
         <HelloWave />
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
+        <ThemedText type="subtitle">Open Details</ThemedText>
+        <Link href="./details">
+          This is the link for details page made in file details.jsx
+        </Link>
+      </ThemedView>
+      <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle">Step 1: Try it</ThemedText>
         <ThemedText>
           Edit{" "}
@@ -94,14 +100,17 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     gap: 8,
+    backgroundColor: "pink",
   },
   stepContainer: {
     gap: 8,
     marginBottom: 8,
+    backgroundColor: "yellow",
+    color: "white",
   },
   reactLogo: {
     height: 178,
-    width: 290,
+    width: 400,
     bottom: 0,
     left: 0,
     position: "absolute",
